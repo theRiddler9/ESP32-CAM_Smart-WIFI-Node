@@ -5,8 +5,8 @@
 #include <Adafruit_SSD1306.h>
 
 // --- Wi-Fi Credentials ---
-const char* ssid = "Redmi 14C 5G";
-const char* password = "norton@1907";
+const char* ssid = "Network Name";
+const char* password = "Network Password";
 
 // --- OLED Display Settings ---
 #define SCREEN_WIDTH 128
