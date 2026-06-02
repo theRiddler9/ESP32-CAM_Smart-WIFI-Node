@@ -1,6 +1,6 @@
 # ESP32-CAM Smart Wi-Fi Camera Node
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements a **Smart Wi-Fi Camera Node** using the **ESP32-CAM** module.
 The system captures real-time images/video and hosts a web server so users can monitor the live feed remotely through a browser or mobile device.
@@ -15,23 +15,23 @@ The project demonstrates:
 
 ---
 
-# 🚀 Features
+# Features
 
-* 📷 Real-time video streaming using ESP32-CAM
-* 🌐 Wi-Fi enabled remote monitoring
-* 🖥️ Web server hosted on ESP32
-* 📺 OLED display for system status
-* ⚡ Low-cost and compact IoT surveillance system
-* 🔌 UART programming using FT232R USB-to-Serial module
-* 📡 MJPEG streaming over HTTP
+*  Real-time video streaming using ESP32-CAM
+*  Wi-Fi enabled remote monitoring
+*  Web server hosted on ESP32
+*  OLED display for system status
+*  Low-cost and compact IoT surveillance system
+*  UART programming using FT232R USB-to-Serial module
+*  MJPEG streaming over HTTP
 
 ---
 
-# 🛠️ Hardware Components
+# Hardware Components
 
 | Component                      | Quantity  | Purpose                           |
 | ------------------------------ | --------- | --------------------------------- |
-| ESP32-CAM (AI Thinker)         | 1         | Main controller and camera module |
+| ESP32-CAM                      | 1         | Main controller and camera module |
 | OV2640 Camera                  | 1         | Image/video capture               |
 | FT232R USB-to-Serial Converter | 1         | Uploading code to ESP32-CAM       |
 | OLED Display SSD1306 (0.96")   | 1         | Display system status             |
@@ -57,7 +57,7 @@ The project demonstrates:
 
 ---
 
-# 📥 Arduino IDE Setup
+# Arduino IDE Setup
 
 ## Step 1 — Install Arduino IDE
 
@@ -114,7 +114,7 @@ Partition Scheme: Huge APP
 
 ---
 
-# 🔌 FT232R to ESP32-CAM Connections
+# FT232R to ESP32-CAM Connections
 
 | FT232R Pin | ESP32-CAM Pin    |
 | ---------- | ---------------- |
@@ -124,7 +124,7 @@ Partition Scheme: Huge APP
 | RX         | U0T (GPIO1 / TX) |
 | GND        | IO0              |
 
-⚠️ IMPORTANT:
+IMPORTANT:
 
 * Set FT232R to **3.3V**
 * Connect **IO0 to GND** while uploading code
@@ -132,7 +132,7 @@ Partition Scheme: Huge APP
 
 ---
 
-# 📺 OLED Connections
+# OLED Connections
 
 | OLED Pin | ESP32-CAM Pin |
 | -------- | ------------- |
@@ -142,22 +142,7 @@ Partition Scheme: Huge APP
 | GND      | GND           |
 
 ---
-
-# 📂 Project Structure
-
-```txt
-ESP32-CAM-Smart-Wifi-Node/
-│
-├── Code.ino
-├── app_httpd.cpp
-├── README.md
-├── circuit-diagram.png
-└── project-report.pdf
-```
-
----
-
-# 💻 What the Code Does
+# What the Code Does
 
 The firmware performs the following operations:
 
@@ -171,7 +156,7 @@ The firmware performs the following operations:
 
 ---
 
-# 🌐 Accessing the Camera Stream
+# Accessing the Camera Stream
 
 After uploading the code:
 
@@ -198,7 +183,7 @@ You can now:
 
 ---
 
-# 📷 Streaming Workflow
+# Streaming Workflow
 
 ```txt
 Camera → Frame Buffer → HTTP Server → Wi-Fi → Browser
@@ -206,7 +191,7 @@ Camera → Frame Buffer → HTTP Server → Wi-Fi → Browser
 
 ---
 
-# ⚡ Technical Specifications
+# Technical Specifications
 
 | Specification     | Details              |
 | ----------------- | -------------------- |
@@ -222,7 +207,7 @@ Camera → Frame Buffer → HTTP Server → Wi-Fi → Browser
 
 ---
 
-# 🧠 Applications
+# Applications
 
 * Smart surveillance
 * Home security
@@ -234,7 +219,7 @@ Camera → Frame Buffer → HTTP Server → Wi-Fi → Browser
 
 ---
 
-# ⚠️ Limitations
+# Limitations
 
 * Limited GPIO pins
 * Requires stable power supply
@@ -243,7 +228,7 @@ Camera → Frame Buffer → HTTP Server → Wi-Fi → Browser
 
 ---
 
-# 🔍 Future Improvements
+# Future Improvements
 
 * Motion detection
 * Face recognition
@@ -254,7 +239,7 @@ Camera → Frame Buffer → HTTP Server → Wi-Fi → Browser
 
 ---
 
-# 🧪 Troubleshooting
+# Troubleshooting
 
 ## Brownout Detector Error
 
@@ -283,7 +268,7 @@ Use stable 5V power supply with sufficient current.
 
 ---
 
-# 📚 Libraries Used
+# Libraries Used
 
 ```cpp
 #include "esp_camera.h"
@@ -295,7 +280,7 @@ Use stable 5V power supply with sufficient current.
 
 ---
 
-# 📖 References
+# References
 
 * ESP32 Official Documentation
 * Arduino ESP32 Core
